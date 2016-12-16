@@ -106,7 +106,8 @@ void TSocketConn::TimerTCP(void){
 			PurgeSocket();
 			FClientSocket->Close();
 		}
-	} else { // Se non è connesso cerca di collegarsi
+	} else { // Se non Ã¨ connesso cerca di collegarsi
+		// TODO: provare delete and new del socket
 		try {
 			FClientSocket->Open();
 		} catch (...){
