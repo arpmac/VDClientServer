@@ -454,4 +454,21 @@ void TConnection::VerifyConnIsAlive(const time_t& _act_time){
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TServerForm::FormActivate(TObject *Sender)
+{
+
+	String aaa = String("--- VisualDyeServer Started ---");
+	VDHLogger(AnsiString(aaa));
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TServerForm::FormClose(TObject *Sender, TCloseAction &Action)
+{
+
+	String aaa = String("--- VisualDyeServer Stopped ---");
+	VDHLogger(AnsiString(aaa));
+
+}
+//---------------------------------------------------------------------------
 

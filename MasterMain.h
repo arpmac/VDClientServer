@@ -74,6 +74,8 @@ __published:	// IDE-managed Components
 	TTimer *Timer1;
 	TServerSocket *ServerSocket1;
 	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall FormActivate(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
 
 
 
